@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <div id="game-board"></div>
+    <div class="controls"></div>
+
+    <div id="score-display">Счёт: 0</div>
+
+    <div id="speed-control">
+      <span id="speed-label">Скорость (мс):</span>
+      <input type="number" id="speed-input" min="50" max="2000" value="800" step="10">
+    </div>
+
+
+    <div id="controls">
+      <button class="arrow-btn" id="leftBtn">←</button>
+      <div style="display: flex; flex-direction: column; gap: 10px">
+        <button class="arrow-btn" id="upBtn">↑</button>
+        <button class="arrow-btn" id="downBtn">↓</button>
+      </div>
+      <button class="arrow-btn" id="rightBtn">→</button>
+    </div>
+    <p></p>
+  </body>
+</html>
